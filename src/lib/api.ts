@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:3001/api';
+// const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://companygrow-backend.onrender.com/api';
 
 export class ApiClient {
   private token: string | null = null;
